@@ -18,4 +18,4 @@ Route::get('/', function () {
 Route::get("vedio","Oss\OssController@vedio");
 Route::get("vedioList","Oss\OssController@vedioList");
 Route::get("ceshi","Oss\OssController@ceshi");
-Route::get("oss","Oss\OssController@oss");
+Route::post("oss","Oss\OssController@oss");
