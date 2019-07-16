@@ -54,7 +54,7 @@ class OssController extends Controller
 
     public function oss(){
         $json=file_get_contents("php://input");
-        $obj_str="Y-m-d,H:i:s".'>>>'."$json".'\n';
+        $obj_str='>>>'."$json".'\n';
         file_put_contents("logs/a.log","$obj_str");
     }
 
