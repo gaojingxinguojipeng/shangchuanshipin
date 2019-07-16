@@ -48,7 +48,14 @@ class OssController extends Controller
         ];
         return view("Vedio.vediolist",$a);
     }
+    public function ceshi(){
+        return view("Vedio.ceshi");
+    }
 
-
+    public function oss(){
+        $json=file_get_contents("php://input");
+        $obj_str="Y-m-d,H:i:s".'>>>'."$json".'\n';
+        file_put_contents("logs/a.log","$obj_str");
+    }
 
 }
