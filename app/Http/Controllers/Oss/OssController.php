@@ -56,6 +56,11 @@ class OssController extends Controller
         $json=file_get_contents("php://input");
         $obj_str='>>>'."$json".'\n';
         file_put_contents("logs/a.log","$obj_str");
+        dd(json_decode("$json"));
+    }
+    public function zhuan(){
+        $a=$_GET['json'];
+        dd(json_decode("$a"));
     }
 
 }
